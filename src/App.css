@@ -1,0 +1,117 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+body {
+  background-color: darkolivegreen;
+}
+.icons {
+  padding-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+ul {
+  list-style: none;
+  margin: 25px 50px 75px 30px;
+}
+
+li.main-list {
+  padding: 25px;
+  border-bottom: solid 3px white;
+  font-size: larger;
+}
+
+.whole-page {
+  padding: 50px;
+  margin-left: 300px;
+  text-align: center;
+  background: darkslateblue;
+  color: white; 
+}
+
+.tab {
+  display: inline-block;
+  margin-left: 75px;
+}
+
+/*Side Nav */
+
+.sideNav {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  bottom: 0;
+  background-color: darkslateblue;
+  padding: 15px 10px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Home Button */
+nav {
+  position: fixed; 
+  top: 0; 
+  right: 0; 
+}
+
+.home-link 
+{
+  border:1px dotted white;
+  background: darkslateblue;
+  width:250px;
+  height: 50px;
+  line-height: 45px;
+  margin: 30px auto;
+}
+
+.links {
+  color: aliceblue;
+}
+
+.links:hover {
+  color: aquamarine;
+}
+
+.main_page_ {
+  display: inline;
+  margin:auto;
+  text-align: center;
+  color: white; 
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.cell {
+  border: 2px dotted white;
+  padding: 20px 75px;
+  position: relative;
+}
+
+.icon-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.deleteButton {
+  display: block;
+  background-color: brown;
+  padding: 20px;
+  margin: 30px;
+}

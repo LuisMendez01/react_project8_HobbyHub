@@ -2,15 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const LinksSideNav = () => {
-    // const [scamList, setScamList] = useState(null);
-    // const API_KEY = import.meta.env.VITE_APP_API_KEY;
-  
-    // useEffect(() => {
-    //   const getScams = async () => {
-    //     var requestOptions = {
-    //       method: "GET",
-    //       redirect: "follow",
-    //     };
 
     return (
         <div>
@@ -22,12 +13,12 @@ const LinksSideNav = () => {
           </li>
           <li className="home-link" key="home-button2">
             <Link  to="/create">
-              <span className="links">Create a Crewmate!</span>
+              <span className="links">Create a Post!</span>
             </Link>
           </li>
           <li className="home-link" key="home-button3">
-            <Link  to="/display">
-              <span className="links">Display Crewmates!</span>
+            <Link  to="/newsfeed">
+              <span className="links">NewsFeed!</span>
             </Link>
           </li>
         </ul>

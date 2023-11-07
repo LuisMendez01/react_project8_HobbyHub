@@ -1,11 +1,11 @@
-import EditCrew from "../components/EditCrew";
+import EditPost from "../components/EditPost";
 
 const EditView = () => {
     return (
         <div>
         <div className="whole-page">
             <div className="main_page_">
-                <EditCrew />
+                <EditPost />
             </div>
          </div>
         </div>

@@ -1,11 +1,11 @@
-import CreateCrew from "../components/CreateCrew";
+import CreatePost from "../components/CreatePost";
 
 const CreateView = () => {
     return (
         <div>
         <div className="whole-page">
             <div className="main_page_">
-                <CreateCrew />
+                <CreatePost />
             </div>
          </div>
         </div>

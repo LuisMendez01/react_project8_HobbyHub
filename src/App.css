@@ -90,13 +90,14 @@ nav {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: repeat(1, 1fr);
+  gap: 75px;
 }
 
 .cell {
   border: 2px dotted white;
-  padding: 20px 75px;
+  padding: 100px 75px;
   position: relative;
 }
 
@@ -107,6 +108,13 @@ nav {
   background: none;
   border: none;
   cursor: pointer;
+  padding-top: 25px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+#editView {
+  padding: 0 80px;
 }
 
 .deleteButton {
@@ -114,4 +122,62 @@ nav {
   background-color: brown;
   padding: 20px;
   margin: 30px;
+}
+
+#editPostBtn {
+  display: block;
+  background-color: darkolivegreen;
+  padding: 10px 20px;
+}
+
+#imgPost {
+  width: 75%;
+  height: 75%;
+  object-fit: cover;
+}
+
+#createPostBtn {
+  display: block;
+  background-color: darkolivegreen;
+  padding: 20px;
+}
+
+#createdAt {
+  position: absolute;
+  font-size: 22px;
+  color: snow;
+  bottom: 0;
+  left: 0;
+  padding-left: 20px;
+}
+
+#title {
+  color: snow;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+#betButton {
+  position: absolute;
+  background-color: darkolivegreen;
+  padding: 20px;
+  margin: 30px;
+  bottom: 0;
+  right: 0;;
+}
+
+#toggleButton {
+  background-color: darkolivegreen;
+  padding: 20px;
+  margin: 30px;
+  width: 200px;
+  margin: auto;
+}
+
+#searchBox {
+  width: 50%;
+  height: 15%;
+  margin: auto;
+  padding: 20px;
+  font-size: 20px;
 }

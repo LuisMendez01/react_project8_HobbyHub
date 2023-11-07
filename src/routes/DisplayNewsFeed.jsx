@@ -1,15 +1,15 @@
-import DisplayCrew from "../components/DisplayCrew";
+import NewsFeed from "../components/NewsFeed";
 
-const DisplayView = () => {
+const DisplayNewsFeed = () => {
     return (
         <div>
         <div className="whole-page">
             <div className="main_page_">
-                <DisplayCrew />
+                <NewsFeed />
             </div>
          </div>
         </div>
     );
   };
   
-  export default DisplayView;
+  export default DisplayNewsFeed;

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import SideNav from "./components/SideNav";
+import SideNav from "./routes/SideNav";
 
 function App() {
 

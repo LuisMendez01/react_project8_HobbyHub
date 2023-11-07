@@ -1,10 +1,10 @@
 # React + Vite
 
-# Web Development Project 7 - *CrewMates*
+# Web Development Project 8 - *HobbyHub*
 
 Submitted by: **Luis Mendez**
 
-This web app: **Do you currently have a game that you absolutely love? Have you ever wanted to customize the characters or build your own team in the game? Now you can make your own team of players in any game of your choosing with this week's project! You will plan, design, and build a custom web app that allows the user to assemble a specific type of team. You can choose their own theme for the app and are encouraged to rename it based on that theme.**
+This web app: **What is your passion? What topic do you always love to learn more about and can't wait to share with everyone else? In this project, you will be building an entire forum surrounding your favorite topic, be it a sport, an academic subject, or a video game! Your web app will allow users to create posts and see a feed of them on the home page, edit, delete, or leave comments underneath them for discussions, and give upvotes for posts that you like! Take full creative control over the look and feel of the web app, and make sure to employ the web design principles that you learned! Ultimately, you will create an awesome forum for an online community for people who share your hobby!**
 
 Time spent: **5** hours spent in total
 
@@ -12,24 +12,33 @@ Time spent: **5** hours spent in total
 
 The following **required** functionality is completed:
 
-- [✅] **A create form allows users to add new cremates**
-- [✅] **Users can name the crewmate and set the crewmate's attributes by clicking on one of several values**
-- [✅] **The site displays a summary page of all the user's added crewmates**
-- [✅] **A previously created crewmate can be updated from the crewmate list**
-- [✅] **A previously created crewmate can be deleted from the crewmate list**
-- [ ] **Each crewmate has a direct, unique link to an info page about them**
+- [✅] **Posts must contain a title, and optionally additional textual content and/or an image added as an external image URL**
+- [✅] **By default, only the time created, title, and upvotes count for each post is shown on the posts feed**
+- [✅] **Clicking on a post shall direct the user to a new page for the selected post**
+- [✅] **Users can sort posts by either their created time or upvotes count**
+- [✅] **Users can search for posts by title**
+- [✅] **A separate post page for each created post, where any additional information is shown, including content, image, and comments**
+- [✅] **Users can leave comments underneath a post on the post page**
+- [✅] **Each post should have an upvote button on the post page. Each click increases its upvotes count by one. Users can upvote any post for any number of times, but not downvote**
+- [✅] **A previously created post can be edited from its post page**
+- [✅] **A previously created post can be deleted from its post page**
 
 The following **optional** features are implemented:
 
-- [ ] A crewmate can be given a category upon creation which restricts their attributes
-- [ ] The site displays summary statistics about a user's crew on their crew page 
-- [ ] The site displays a custom "success" metric about a user's crew which changes the look of the crewmate list
+- [ ] Users can only edit and delete posts or delete comments by entering the secret key, which is set by the user during post creation
+- [ ] Upon launching the web app, the user is assigned a random user ID. It will be associated with all posts and comments that they make and displayed on them
+- [ ] Users can repost a previous post by referencing its post ID. On the post page of the new post, the referenced post is displayed and linked, creating a thread
+- [ ] Users can customize the interface, e.g. selecting the color scheme or showing the content and image of each post on the home feed
+- [ ] Users can share and view web videos
+- [ ] Users can set flags such as "Question" or "Opinion" while creating a post. Then, users can filter posts by flags on the home feed.
+- [✅] Users can upload images directly from their local machine as an image file.
+- [ ] Display a loading animation whenever data is being fetched
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img text-align="center" src='/web102_project7_result.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' width="300" height="450"/>
+<img text-align="center" src='/web102_project8_result.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' width="300" height="450"/>
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with 

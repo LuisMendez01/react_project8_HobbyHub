@@ -7,6 +7,7 @@ import Layout from './routes/Layout';
 import CreateView from './routes/CreateView.jsx';
 import DisplayNewsFeed from './routes/DisplayNewsFeed.jsx';
 import EditView from './routes/EditView.jsx';
+import PostView from './routes/PostView.jsx';
 import { Link } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -18,6 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route index={false} path='/create' element={<CreateView />} />
           <Route index={false} path='/newsfeed' element={<DisplayNewsFeed />} />
           <Route index={false} path='/edit/:postId' element={<EditView />} />
+          <Route index={false} path='/post/:postId' element={<PostView />} />
           <Route
             path="*"
             element={

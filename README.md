@@ -12,27 +12,28 @@ Time spent: **5** hours spent in total
 
 The following **required** functionality is completed:
 
-- [✅] **Posts must contain a title, and optionally additional textual content and/or an image added as an external image URL**
-- [✅] **By default, only the time created, title, and upvotes count for each post is shown on the posts feed**
+- [✅] **A create form that allows the user to create posts**
+- [✅] **Posts have a title and optionally additional textual content and/or an image added as an external image URL**
+- [✅] **A home feed displaying previously created posts**
+- [✅] **By default, the time created, title, and number of upvotes for each post is shown on the feed**
 - [✅] **Clicking on a post shall direct the user to a new page for the selected post**
 - [✅] **Users can sort posts by either their created time or upvotes count**
 - [✅] **Users can search for posts by title**
-- [✅] **A separate post page for each created post, where any additional information is shown, including content, image, and comments**
-- [✅] **Users can leave comments underneath a post on the post page**
-- [✅] **Each post should have an upvote button on the post page. Each click increases its upvotes count by one. Users can upvote any post for any number of times, but not downvote**
-- [✅] **A previously created post can be edited from its post page**
-- [✅] **A previously created post can be deleted from its post page**
+- [✅] **A separate post page for each created post, where any additional information is shown is linked whenever a user clicks a post**
+- [✅] **Users can leave comments underneath a post on the post's separate page**
+- [✅] **Each post should have an upvote button on the post's page. Each click increases its upvotes count by one and users can upvote any number of times**
+- [✅] **A previously created post can be edited or deleted from its post page**
 
 The following **optional** features are implemented:
 
-- [ ] Users can only edit and delete posts or delete comments by entering the secret key, which is set by the user during post creation
-- [ ] Upon launching the web app, the user is assigned a random user ID. It will be associated with all posts and comments that they make and displayed on them
+- [ ] Users can only edit and deleted posts or delete comments by entering the secret key, which is set by the user during post creation
+- [ ] Upon launching the web app, the user is assigned a random user ID. It will be associated with all posts and comments that they make and displayed on them.
 - [ ] Users can repost a previous post by referencing its post ID. On the post page of the new post, the referenced post is displayed and linked, creating a thread
-- [ ] Users can customize the interface, e.g. selecting the color scheme or showing the content and image of each post on the home feed
+- [ ] Users can customize the interface of the web app
 - [ ] Users can share and view web videos
-- [ ] Users can set flags such as "Question" or "Opinion" while creating a post. Then, users can filter posts by flags on the home feed.
-- [✅] Users can upload images directly from their local machine as an image file.
-- [ ] Display a loading animation whenever data is being fetched
+- [ ] Users can set flags while creating a post. Then users can filter posts by flags on the home feed.
+- [✅] Users can upload images directly from their local machine as an image file
+- [✅] Display a loading animation whenever data is being fetched
 
 ## Video Walkthrough
 

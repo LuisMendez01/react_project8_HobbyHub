@@ -7,8 +7,8 @@ function App() {
   return (
     <div className="whole-page">
       <div className="main_page_">
-        <h1>Welcome to the Crewmate Creator!</h1>
-        <h3>Here is where you can create your very own set of crewmates before sending them off into space!</h3>
+        <h1>Welcome to another <br/> Social Media Site!</h1>
+        <h3>Here you can create posts and people might like it and comment!</h3>
       </div>
     </div>
   )

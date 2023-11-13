@@ -1,7 +1,7 @@
 import React from "react";
 import { supabase } from '../client'
 import { useParams } from 'react-router-dom';
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 
 const EditPost = () => {
 

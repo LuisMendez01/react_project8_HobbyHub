@@ -2,15 +2,17 @@ import React from "react";
 import { useEffect, useState } from 'react'
 //import './CreatePost.css'
 import { supabase } from '../client'
-import { FaEllipsisV, FaPodcast } from 'react-icons/fa'; // Importing Font Awesome Icon
 import LikesCount from "./LikesCount";
+import { ThreeDots } from 'react-loader-spinner';
 
 const EditCrew = () => {
       
     const [posts, setPosts] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        fetchPosts();
+        //fetchPosts();
+        setTimeout(fetchPosts, 1000);
     }, [])
     
     // READ all post from table
@@ -18,16 +20,11 @@ const EditCrew = () => {
         const {data} = await supabase
         .from('Posts')
         .select();
+
+        setIsLoading(false); // Set loading to false once data is fetched
     
         // set state of posts
         setPosts(data)
-    }
-
-    function handleIconClick(post) {
-        // Perform your action here
-        console.log('post');
-        console.log(post);
-        window.location = "/edit/" + post.id;
     }
 
     //SORTING
@@ -52,10 +49,24 @@ const EditCrew = () => {
         setSearchTerm(event.target.value);
     };
 
+    const handleDivClick = (post) => {
+        window.location = "/post/" + post.id;
+    };
+
     const filteredPosts = sortedPosts.filter(post => post.title.toLowerCase().includes(searchTerm.toLowerCase()));
 
     return (
         <div className="grid">
+            {isLoading ? (
+            <ThreeDots
+                type="Puff"
+                color="#00BFFF"
+                height={100}
+                width={100}
+                timeout={2000} //3 secs
+            />
+        ) : (
+            <>
             <input id="searchBox" type="text" value={searchTerm} onChange={handleSearchChange} placeholder="Search by Title" />
             <button id="toggleButton" onClick={toggleSortOrder}>
                     Sort by: {sortOrder === 'created_at' ? 'Date' : 'Likes'}
@@ -63,18 +74,17 @@ const EditCrew = () => {
                 {filteredPosts.map((post, index) => {
                 const modifiedString = post.created_at.substring(0, 10);
                 return (
-                    <div key={index} className="cell">
-                        <button className="icon-button" onClick={() => handleIconClick(post)}>
-                            <FaEllipsisV />
-                        </button>
+                    <div key={index} className="cell" onClick={() => handleDivClick(post)}>
                         <h1 id="title">{post.title}</h1>
-                        <img id="imgPost" src={post.img_url} alt={`Downloaded from Supabase: ${post.title}`} />
-                        <p>{post.description}</p>
+                        {/* <img id="imgPost" src={post.img_url} alt={`Downloaded from Supabase: ${post.title}`} /> */}
+                        <p id="description">{post.description}</p>
                         <p id="createdAt">{modifiedString}</p>
                         <LikesCount key={`${post.id}-${post.betCount}`} id={post.id} betCount={post.betCount} />
                     </div>
                 );
             })}
+            </>
+        )}
         </div>
     );
 }
